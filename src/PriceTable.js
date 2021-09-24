@@ -6,10 +6,8 @@ function PriceTable({data}){
           support, noOfDomains, report} = {...data};
          
     return(
-<section className="pricing py-5">
-  <div className="container">
-    <div className="col-lg-4">
-        <div className="card">
+
+        <div className="card m-3 rounded">
             <div className="card-body">
                 <h5 className="card-title text-muted text-uppercase text-center">{title}</h5>
                 <h6 className="card-price text-center">{price}<span className="period">{rate}</span></h6>
@@ -22,18 +20,15 @@ function PriceTable({data}){
                 <li><span className="fa-li"><i className="fas fa-check"></i></span>{access}</li>
                 <li><span className="fa-li"><i className="fas fa-check"></i></span>{noOfPrivateProjects}</li>
                 <li><span className="fa-li"><i className="fas fa-check"></i></span>{support}</li>
-                <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>{noOfDomains}</strong> Free
-                    Subdomains</li>
+                <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>{noOfDomains}</strong></li>
                 <li><span className="fa-li"><i className="fas fa-check"></i></span>{report}</li>
                 </ul>
                 <div className="d-grid">
-                <a href="#" className="btn btn-primary text-uppercase">Button</a>
+                <a href="/" className="btn btn-primary text-uppercase">Button</a>
                 </div>   
             </div>
          </div>
-    </div>
-  </div>
-</section>
+
     )
 
 }

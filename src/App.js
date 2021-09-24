@@ -44,12 +44,14 @@ function App() {
   ];
 
   return (
-    <section className="pricing py-5">
+    <section className="pricing py-5 m-1 bg-primary ">
       <div className="container">
-        <div className="col-lg-4">
+        <div className = "d-flex justify-content-center">
+       
           <PriceTable data = {priceCard[0]}/>
           <PriceTable data = {priceCard[1]}/>
           <PriceTable data = {priceCard[2]}/>
+        
         </div>
       </div>
     </section>
